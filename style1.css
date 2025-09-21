@@ -1,0 +1,118 @@
+/* UTAMA: KARTU PEMBUKA */
+.card {
+  max-width: 350px;
+  width: 90%;
+  min-height: 500px;
+  margin: 2rem auto;
+  padding: 40px 25px;
+  background-image: url('mempelai1.jpg'); /* Latar kartu */
+  background-size: cover;        /* biar full dan rapi */
+  background-position: center;   /* fokus di tengah */
+  background-repeat: no-repeat;  /* tidak diulang */
+  border-radius: 25px;           /* sudut membulat */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* bayangan */
+  color: white;
+  text-shadow: 0 0 5px rgba(194, 194, 194, 0.7); /* efek bayangan teks */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* konten ke bawah */
+}
+
+/* Responsif untuk HP kecil */
+@media (max-width: 480px) {
+  .card {
+    max-width: 320px;
+    min-height: 460px;
+    padding: 30px 20px;
+    background-position: center top; /* lebih fokus atas */
+  }
+}
+
+/* Responsif untuk laptop */
+@media (min-width: 1024px) {
+  .card {
+    max-width: 400px;
+    min-height: 600px;
+    background-position: center; /* tetap tengah */
+  }
+}
+
+/* BODY */
+body {
+  background-size: cover; /* Menutupi seluruh layar */
+  background-position: center; /* Posisi tengah */
+  background-repeat: no-repeat; /* Tidak diulang */
+  background-attachment: fixed; /* Tetap saat scroll */
+  font-family: 'Lora', serif; /* Font isi */
+  color: #333; /* Warna teks utama */
+  overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+
+/* KHUSUS: Heading undangan */
+.wedding-subtitle {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.wedding-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: #ef5fac;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.wedding-names span {
+  display: block;   /* bikin tiap span baris baru */
+  line-height: 1.2; /* jarak antar baris */
+}
+.wedding-names span:nth-child(2) {
+  font-size: 1.5rem; /* ukuran khusus untuk simbol & */
+  margin: 0.5rem 0;  /* jarak atas bawah */
+}
+
+/* TAMU */
+.tamu {
+  margin-top: auto;
+  text-align: center;
+}
+
+.tamu-text {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0.5rem 0;
+}
+
+.guest-name {
+  color: #ff006f; /* Warna nama tamu */
+  font-weight: bold; /* Tebal */
+  margin: 10px 0 20px; /* Spasi vertikal */
+}
+
+/* TOMBOL */
+.btn {
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  background-color: #ff85c1; /* Warna tombol */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: pink; /* Hover tombol */
+  transform: scale(1.05);
+}
